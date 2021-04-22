@@ -79,8 +79,10 @@ a.mainloop() ## you need this to have a window running
 
 
 
-##That's it! You made it!
+## That's it! You made it!
 ![alt text](https://media.discordapp.net/attachments/503263339615485952/834775761151459408/congrats.png)   
+
+
 you can [leave](/README.md) or something
 
 no really you can [leave](/README.md)
