@@ -6,7 +6,7 @@ Let's say you want to create a twitter bot but you dont know how.<br/>
 emmm...<br/>
 Ok, first I need to clarify what we are doing here. So...you know that comments that people make like
 
-< day (random number) of asking for (random thing) for example ![alt text](https://media.discordapp.net/attachments/503263339615485952/834783557893357568/unknown.png)
+> day (random number) of asking for (random thing) for example ![alt text](https://media.discordapp.net/attachments/503263339615485952/834783557893357568/unknown.png)
 
 yeah something like that.<br/>
 We will make that but as a bot.<br/>
