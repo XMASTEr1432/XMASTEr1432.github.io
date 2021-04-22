@@ -40,7 +40,7 @@ And here:<br/>
 Copy all of those to the txt file you'll need them later<br/>
 While we are on the bot settings change something there:
 
-![alt text](https://media.discordapp.net/attachments/503263339615485952/834785491264995338/unknown.png?width=848&height=609)
+![alt text](https://media.discordapp.net/attachments/503263339615485952/834793286169395280/unknown.png)
 
 Now we need to to do some coding (heck yeah)<br/>
 
