@@ -85,7 +85,7 @@ Do you see the tweet "test" there?<br/>
 Great!<br/>
 Remember that you cant tweet the same thing twice so you have to change the *api.update_status("test")* command to something else like *api.update_status("OwO")* or something<br/>
 
-  [continues on the next page...](/tweet.md)
+  [continues on the next page...](/tweetnext.md)
 
 
 
