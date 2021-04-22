@@ -6,7 +6,7 @@ Let's say you want to create a twitter bot but you dont know how.<br/>
 emmm...<br/>
 Ok, first I need to clarify what we are doing here. So...you know that comments that people make like
 
-<day (random number) of asking for (random thing) for example ![alt text](https://media.discordapp.net/attachments/503263339615485952/834783557893357568/unknown.png)
+< day (random number) of asking for (random thing) for example ![alt text](https://media.discordapp.net/attachments/503263339615485952/834783557893357568/unknown.png)
 
 yeah something like that.<br/>
 We will make that but as a bot.<br/>
@@ -83,7 +83,7 @@ Do you see the tweet "test" there?<br/>
 Great!<br/>
 Remember that you cant tweet the same thing twice so you have to change the *api.update_status("test")* command to something else like *api.update_status("OwO")* or something<br/>
 
-## this tutorial isnt finished yet so wait a bit :)
+  [continues on the next page...](/tweet.md)
 
 
 
