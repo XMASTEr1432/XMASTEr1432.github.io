@@ -5,7 +5,7 @@
 <body style="background-color:black">
 <button style="background-color:black; border-color:green;color:green" onclick="myFunction()">Press the button to grant access</button>
  </a>
-<h3><p style="color:green">If you want to access the main page enter "mainpage" after clicking the button.</h3></p>
+<p style="color:green">There are some easter eggs on this page ;)</p>
 <p id="demo"></p>
 <script>
 document.getElementById("demo").style.color = "green";
@@ -13,12 +13,18 @@ function myFunction() {
   var text;
   var hacker = prompt("Password:", ""); 
   switch(hacker){
+	  case "milk":
+	      text = "ACCESS GRANTED"
+		  location.href = "https://media.discordapp.net/attachments/802617972098203689/836196001974059018/milkmemewith.jpg"
+	  case "twitter":
+	      text = "ACCESS GRANTED"
+		  location.href = "https://twitter.com/XMASTEr1432"
+	  case "discord":
+		  text = "ACCESS GRANTED"
+		  location.href = "https://discord.gg/yACNHhjUz2"
 	  case "imahackerman":
 		  text = "ACCESS GRANTED";
 		  break;
-	  case "mainpage":
-		  text = "ACCESS TO THE MAIN PAGE GRANTED"
-		  //location.href = "/README.md"
 	  default:
 		  text = "ACCESS DENIED"
 		  location.href = "index.html"
