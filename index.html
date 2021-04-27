@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>I'm a hackerman</title>
+</head>
+<body style="background-color:black">
+<button style="background-color:black; border-color:green;color:green" onclick="myFunction()">Press the button to grant access</button>
+ </a>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").style.color = "green";
+function myFunction() {
+  var text;
+  var hacker = prompt("Password:", ""); 
+  switch(hacker) {
+    case "imahackerman":
+      text = "ACCESS GRANTED";
+      break;
+	default:
+	text = "ACCESS GRANTED";
+	location.href = "index.html";
+  }
+  document.getElementById("demo").innerHTML = text;
+  var button = document.createElement("button");
+  button.innerHTML = "Go to the next page";
+  var body = document.getElementsByTagName("body")[0];
+  body.appendChild(button);
+  button.addEventListener ("click", function() {
+  location.href = "dalej.html";;});
+}
+</script>
+</body>
+</html>
