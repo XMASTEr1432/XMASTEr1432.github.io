@@ -14,6 +14,23 @@ In short, it's my homework but I made it but with more stuff that I didn't learn
 idk maybe because im bored<br/>
 
 ## So let's get started
+```html
+
+```
+```html
+```
+```html
+```
+```html
+```
+```html
+```
+```html
+```
+```html
+```
+
+
 
 ```html
 <html>
