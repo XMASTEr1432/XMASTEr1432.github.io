@@ -12,16 +12,16 @@ document.getElementById("demo").style.color = "green";
 function myFunction() {
   var text;
   var hacker = prompt("Password:", ""); 
-  switch(hacker) {
-    case "imahackerman":
-      text = "ACCESS GRANTED";
-      break;
-	case "mainpage"
-	text = "ACCESS TO THE MAIN PAGE GRANTED"
-	location.href = "README.md";
-	default:
-	text = "ACCESS GRANTED";
-	location.href = "index.html";
+  switch(hacker){
+	  case "imahackerman":
+		  text = "ACCESS GRANTED";
+		  break;
+	  case "mainpage":
+		  text = "ACCESS TO THE MAIN PAGE GRANTED"
+		  location.href = "README.md"
+	  default:
+		  text = "ACCESS DENIED"
+		  location.href = "index.html"
   }
   document.getElementById("demo").innerHTML = text;
   var button = document.createElement("button");
