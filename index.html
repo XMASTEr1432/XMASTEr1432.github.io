@@ -5,6 +5,7 @@
 <body style="background-color:black">
 <button style="background-color:black; border-color:green;color:green" onclick="myFunction()">Press the button to grant access</button>
  </a>
+<h3><p style="color:green">If you want to access the main page enter "mainpage" after clicking the button.</h3></p>
 <p id="demo"></p>
 <script>
 document.getElementById("demo").style.color = "green";
@@ -15,9 +16,12 @@ function myFunction() {
     case "imahackerman":
       text = "ACCESS GRANTED";
       break;
+	case "mainpage"
+	text = "ACCESS TO THE MAIN PAGE GRANTED"
+	location.href = "README.md";
 	default:
 	text = "ACCESS GRANTED";
-	location.href = "imahackerman.html";
+	location.href = "index.html";
   }
   document.getElementById("demo").innerHTML = text;
   var button = document.createElement("button");
