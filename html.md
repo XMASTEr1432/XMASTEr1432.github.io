@@ -54,7 +54,7 @@ function myFunction() {
 		  break;
 	  case "twitter":
 	          text = "ACCESS GRANTED"
-		  location.href = "https://twitter.com/XMASTEr1432"
+		  location.href = "https://twitter.com/dallasfrompd"
 		  break;
 	  case "imahackerman":
 		  text = "ACCESS GRANTED";
