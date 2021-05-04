@@ -38,25 +38,34 @@ idk maybe because im bored<br/>
 <title>I'm a hackerman</title>
 </head>
 <body style="background-color:black">
-<button style="background-color:black; border-color:green;color:green" onclick="myFunction()">Kliknij aby wpisać hasło.</button>
+<button style="background-color:black; border-color:green;color:green" onclick="myFunction()">Press the button to grant access</button>
  </a>
+<p style="color:green">There are some easter eggs on this page ;)</p>
 <p id="demo"></p>
 <script>
 document.getElementById("demo").style.color = "green";
 function myFunction() {
   var text;
-  var hacker = prompt("Wpisz komendę tutaj", ""); 
-  switch(hacker) {
-    case "imahackerman":
-      text = "ACCESS GRANTED";
-      break;
-	default:
-	text = "ACCESS GRANTED";
-	location.href = "index.html";
+  var hacker = prompt("Password:", ""); 
+  switch(hacker){
+	  case "milk":
+	          text = "ACCESS GRANTED"
+		  location.href = "https://media.discordapp.net/attachments/802617972098203689/836196001974059018/milkmemewith.jpg"
+		  break;
+	  case "twitter":
+	          text = "ACCESS GRANTED"
+		  location.href = "https://twitter.com/XMASTEr1432"
+		  break;
+	  case "imahackerman":
+		  text = "ACCESS GRANTED";
+		  break;
+	  default:
+		  text = "ACCESS DENIED"
+		  location.href = "index.html"
   }
   document.getElementById("demo").innerHTML = text;
   var button = document.createElement("button");
-  button.innerHTML = "Przejdź do następnej strony";
+  button.innerHTML = "Go to the next page";
   var body = document.getElementsByTagName("body")[0];
   body.appendChild(button);
   button.addEventListener ("click", function() {
