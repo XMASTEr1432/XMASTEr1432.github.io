@@ -98,7 +98,8 @@ The command
 
 it looks like this<br/>
 ![alt text](https://cdn.discordapp.com/attachments/802617972098203689/847145820972515397/unknown.png)
-<br/>(don't worry that it's in a weird language. it varies for the different browser language {i hope i spelled it right hahaha.....})
+<br/>
+(don't worry that it's in a weird language. it varies for the different browser language {i hope i spelled it right hahaha.....})
 ```html
   switch(hacker){
 	  case "imahackerman":
