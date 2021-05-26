@@ -116,7 +116,8 @@ When the statement is correct the <br/>
 >case "imahackerman":
 	text = "ACCESS GRANTED";
 	break;
-code is executed <br/>
+
+<br/>code is executed <br/>
 Ok it's easier to explain it that way. <br/>
 It's just like if statements in Python or C#. For example:
 ```python
