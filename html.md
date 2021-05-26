@@ -109,21 +109,21 @@ it looks like this<br/>
 		  location.href = "index.html"
   }
 ```
-Ok ok I understand that you can be a little confused here. Ok im gonna try to explain it.</br>
-Command switch contains cases that contain code. </br>
-When the statement is correct the</br>
+Ok ok I understand that you can be a little confused here. Ok im gonna try to explain it.<br/>
+Command switch contains cases that contain code. <br/>
+When the statement is correct the <br/>
 >case "imahackerman":
 	text = "ACCESS GRANTED";
 	break;
-code is executed </br>
-Ok it's easier to explain it that way.</br>
+code is executed <br/>
+Ok it's easier to explain it that way. <br/>
 It's just like if statements in Python or C#. For example:
 ```python
 a = "something"
 if a = something:
 	print("something")
 ```
-Do you get it now? </br>
+Do you get it now? <br>
 Ok cool. Lets move on.
 ```html
 default:
@@ -151,13 +151,13 @@ else:
 }
 </script>
 ```
-Basically it just creates a new button to go to the next page. </br>
+Basically it just creates a new button to go to the next page. <br/>
 
 
-##Congratulations! You completed the tutorial! </br>
+## Congratulations! You completed the tutorial! <br/>
 ![alt text](https://media.discordapp.net/attachments/503263339615485952/834775761151459408/congrats.png)
-</br>
-Here is the full code if you want it:   
+
+Here is the full code if you want it: <br/>  
 
 ```html
 <html>
@@ -218,6 +218,5 @@ ok you asked for it
 
 https://cdn.discordapp.com/attachments/843247611779874827/846816290450178099/i_love_among_us.mp4
 
-##maid spongebob
 
 ok you can [leave](/README.md) now
