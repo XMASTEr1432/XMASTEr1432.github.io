@@ -219,7 +219,7 @@ please
 
 ok you asked for it
 
-https://cdn.discordapp.com/attachments/843247611779874827/846816290450178099/i_love_among_us.mp4
+[![video](https://samequizy.pl/wp-content/uploads/2021/03/images_45d807188233.jpg)](https://youtu.be/hm77MFaNwUw)
 
 
 ok you can [leave](/README.md) now
