@@ -20,3 +20,7 @@ git add --all
 git commit -m "cool change"
 git push origin main
 ```
+oh
+what are you doing here
+you are not supposed to be here
+ok watch [this]() or something
