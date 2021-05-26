@@ -23,4 +23,4 @@ git push origin main
 oh<br/>
 what are you doing here<br/>
 you are not supposed to be here<br/>
-ok watch [this](https://cdn.discordapp.com/attachments/843247611779874827/847135634745327696/video0.mp4) or something<br/>
+ok watch [this](/video.html) or something<br/>
