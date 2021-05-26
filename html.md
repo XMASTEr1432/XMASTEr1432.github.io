@@ -100,8 +100,44 @@ it looks like this<br/>
 ![alt text](https://cdn.discordapp.com/attachments/802617972098203689/847145820972515397/unknown.png)
 <br/>(don't worry that it's in a weird language. it varies for the different browser language {i hope i spelled it right hahaha.....})
 ```html
+  switch(hacker){
+	  case "imahackerman":
+		  text = "ACCESS GRANTED";
+		  break;
+	  default:
+		  text = "ACCESS DENIED"
+		  location.href = "index.html"
+  }
 ```
+Ok ok I understand that you can be a little confused here. Ok im gonna try to explain it.</br>
+Command switch contains cases that contain code. </br>
+When the statement is correct the</br>
+>case "imahackerman":
+	text = "ACCESS GRANTED";
+	break;
+code is executed</br>
+Ok it's easier to explain it that way.</br>
+It's just like if statements in Python or C#. For example:
+```python
+a = "something"
+if a = something:
+	print("something")
+```
+Do you get it now?</br>
+Ok cool. Lets move on.
 ```html
+default:
+	text = "ACCESS DENIED"
+	location.href = "index.html"
+```
+When the statement is false it execute the code above.
+It's just like else statements in Python or C#. For example:
+```python
+a = "something"
+if a = something:
+	print("something")
+else:
+	print("somethingsomething")
 ```
 ```html
 ```
