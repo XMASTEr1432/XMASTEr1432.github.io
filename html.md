@@ -115,7 +115,7 @@ When the statement is correct the</br>
 >case "imahackerman":
 	text = "ACCESS GRANTED";
 	break;
-code is executed</br>
+code is executed </br>
 Ok it's easier to explain it that way.</br>
 It's just like if statements in Python or C#. For example:
 ```python
@@ -123,7 +123,7 @@ a = "something"
 if a = something:
 	print("something")
 ```
-Do you get it now?</br>
+Do you get it now? </br>
 Ok cool. Lets move on.
 ```html
 default:
@@ -139,11 +139,25 @@ if a = something:
 else:
 	print("somethingsomething")
 ```
+
 ```html
+  document.getElementById("demo").innerHTML = text;
+  var button = document.createElement("button");
+  button.innerHTML = "Go to the next page";
+  var body = document.getElementsByTagName("body")[0];
+  body.appendChild(button);
+  button.addEventListener ("click", function() {
+  location.href = "dalej.html";;});
+}
+</script>
 ```
+Basically it just creates a new button to go to the next page. </br>
 
 
-
+##Congratulations! You completed the tutorial! </br>
+![alt text](https://media.discordapp.net/attachments/503263339615485952/834775761151459408/congrats.png)
+</br>
+Here is the full code if you want it:   
 
 ```html
 <html>
@@ -160,14 +174,6 @@ function myFunction() {
   var text;
   var hacker = prompt("Password:", ""); 
   switch(hacker){
-	  case "milk":
-	          text = "ACCESS GRANTED"
-		  location.href = "https://media.discordapp.net/attachments/802617972098203689/836196001974059018/milkmemewith.jpg"
-		  break;
-	  case "twitter":
-	          text = "ACCESS GRANTED"
-		  location.href = "https://twitter.com/dallasfrompd"
-		  break;
 	  case "imahackerman":
 		  text = "ACCESS GRANTED";
 		  break;
@@ -187,3 +193,31 @@ function myFunction() {
 </body>
 </html>
 ```
+
+ok you can now [leave](/README.md)
+
+no really you can [leave](/README.md)
+
+[leave](/README.md)
+
+please [leave](/README.md)
+
+man
+
+please stop
+
+leave me alone
+
+## [LEAVE NOW](/README.md)
+
+please
+
+...
+
+ok you asked for it
+
+https://cdn.discordapp.com/attachments/843247611779874827/846816290450178099/i_love_among_us.mp4
+
+##maid spongebob
+
+ok you can [leave](/README.md) now
