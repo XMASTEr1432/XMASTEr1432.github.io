@@ -131,8 +131,9 @@ default:
 	text = "ACCESS DENIED"
 	location.href = "index.html"
 ```
+<br/>
 When the statement is false it execute the code above.
-It's just like else statements in Python or C#. For example:
+It's just like else statements in Python or C#. For example:<br/>
 ```python
 a = "something"
 if a = something:
