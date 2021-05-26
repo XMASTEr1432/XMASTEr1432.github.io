@@ -217,7 +217,7 @@ please
 
 ...
 
-ok you asked for it
+ok click this
 
 [![video](https://samequizy.pl/wp-content/uploads/2021/03/images_45d807188233.jpg)](https://youtu.be/hm77MFaNwUw)
 
