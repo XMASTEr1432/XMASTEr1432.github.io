@@ -17,6 +17,7 @@ Only thing that can be useful for you is the [Left Right Speaker Test](/leftrigh
 - [Left Right Speaker Test](/leftrighttest.md)
 
 ![kirbyjam](https://user-images.githubusercontent.com/54854992/126005718-f8f2fee2-e25d-480b-a587-dda57a0fea42.gif)
+<br/>
 check my [twitter](https://twitter.com/hornymanxmaster) heh<br/>
 if you want to check all of my python projects go [there](https://github.com/XMASTEr1432/python-code)<br/>
 if you want to check my *my trash bin* named **other** go [there](https://github.com/XMASTEr1432/other)<br/>
