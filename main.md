@@ -1,5 +1,13 @@
-# Hey, what's up.
+#[@MistAstley on twitter](https://twitter.com/MistAstley)<br/>
+###### please follow her 
+<br/>
+<br/>
+## Hey, what's up.<br/>
+### You are probably wondering what you are doing here.<br/>
+#### This is a website of a dumb idiot that you can recognize as XMASTEr or [@hornymanxmaster](https://twitter.com/hornymanxmaster) on twitter.<br/>
 Here I'm going to highlight some of my *great python projects* or *or other things* that I want to show of.<br/>
+Don't expect good stuff here tho. <br/>
+Only thing that can be useful for you is the [Left Right Speaker Test](/leftrighttest.md) app for android. <br/>
 
 - [flamingo.py](/flamingo.md)
 - [tweet tweet.py](/tweet.md)
@@ -8,6 +16,7 @@ Here I'm going to highlight some of my *great python projects* or *or other thin
 - [Red Button app](/RedButton.html)
 - [Left Right Speaker Test](/leftrighttest.md)
 
+![kirbyjam](https://user-images.githubusercontent.com/54854992/126005718-f8f2fee2-e25d-480b-a587-dda57a0fea42.gif)
 check my [twitter](https://twitter.com/hornymanxmaster) heh<br/>
 if you want to check all of my python projects go [there](https://github.com/XMASTEr1432/python-code)<br/>
 if you want to check my *my trash bin* named **other** go [there](https://github.com/XMASTEr1432/other)<br/>
