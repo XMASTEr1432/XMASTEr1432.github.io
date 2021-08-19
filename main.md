@@ -14,7 +14,7 @@ Only thing that can be useful for you is the [Left Right Speaker Test](/leftrigh
 - [a html page](/imahackerman.html)
 - [code from the html page](/html.md)
 - [Red Button app](/RedButton.html)
-- [Left Right Speaker Test](/leftrighttest.md)
+- [Left Right Speaker Test](/leftrighttest.html)
 
 ![kirbyjam](https://user-images.githubusercontent.com/54854992/126005718-f8f2fee2-e25d-480b-a587-dda57a0fea42.gif)
 <br/>
