@@ -4,7 +4,7 @@ please follow her
 <br/>
 <h1>Hey, what's up.<br/></h1>
  <h2>You are probably wondering what you are doing here.<br/></h2>
- <h2>This is a website of a dumb idiot that you can recognize as XMASTEr or [@hornymanxmaster](https://twitter.com/hornymanxmaster) on twitter.<br/></h2>
+ <h2>This is a website of a dumb idiot that you can recognize as XMASTEr or </h2>[@hornymanxmaster](https://twitter.com/hornymanxmaster)<h2> on twitter.</h2><br/>
 Here I'm going to highlight some of my *great python projects* or *or other things* that I want to show of.<br/>
 Don't expect good stuff here tho. <br/>
 Only thing that can be useful for you is the [Left Right Speaker Test](/leftrighttest.md) app for android. <br/>
