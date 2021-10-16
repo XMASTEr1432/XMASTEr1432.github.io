@@ -2,3 +2,5 @@
 ![alt text](https://www.pngitem.com/pimgs/m/43-430055_i-love-you-text-png-image-file-love.png)
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png)
 <link rel="shortcut icon" href="favicon.ico">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7528464376376720"
+     crossorigin="anonymous"></script>
