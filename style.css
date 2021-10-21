@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif; 
+}
+
+p{
+    margin: 5px 20px;
+    font-size: 20px;
+}
+
+img{
+    margin: 50px;
+}
+
+.alert{
+  font-size:50 px;
+  color: rgba(255, 0, 0, 0.747);
+  text-align: center;
+}
+
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+b{
+    margin: 5px 20px;
+    font-size: 35px;
+    color: rgba(252, 107, 129, 0.747);
+}
+
+dl a{
+    margin: 5px 20px;
+    font-size: 15px;
+    color: rgb(255, 131, 150);
+    background-color: rgba(255, 160, 122, 0.151);
+}
+dt{
+    margin: 5px 20px;
+    font-size: 20px;
+    color: rgb(255, 160, 122);
+    background-color: rgba(252, 188, 197, 0.219);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  nav {
+    background: rgba(255, 232, 232, 0.932);
+    height: 80px;
+    width: 100%;
+  }
+  
+  nav label.logo {
+    -webkit-transition: .5s;
+    transition: .5s;
+    color: red;
+    font-size: 35px;
+    line-height: 80px;
+    margin-left: 40px;
+    font-weight: 700;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 40px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    -webkit-transition: .5s;
+    transition: .5s;
+    color: #ff7474;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  nav ul li a.active, nav ul li a:hover {
+    background: #ff0c04;
+    color: white;
+  }
+  
+  nav .checkbtn {
+    font-size: 24px;
+    color: darkorange;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  nav #check {
+    display: none;
+  }
+
+  @media (max-width: 1150px) {
+    nav .checkbtn {
+      display: block;
+    }
+    nav ul {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #043acc;
+      color: white;
+      top: 80px;
+      left: 100%;
+      text-align: center;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    nav ul li a.active, nav ul li a:hover {
+      background: none;
+      color: orange;
+    }
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  }
