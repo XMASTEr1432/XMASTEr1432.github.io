@@ -108,7 +108,7 @@ header {
   
   nav .checkbtn {
     font-size: 24px;
-    color: rgb(255, 0, 0);
+    color: red;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -128,7 +128,7 @@ header {
       position: fixed;
       width: 100vw;
       height: 100vh;
-      background: #ffffff;
+      background: white;
       color: white;
       top: 80px;
       left: 100%;
@@ -146,7 +146,7 @@ header {
     }
     nav ul li a.active, nav ul li a:hover {
       background: none;
-      color: rgb(255, 0, 0);
+      color: red;
     }
     nav #check:checked ~ ul {
       left: 0;
