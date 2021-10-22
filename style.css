@@ -14,6 +14,13 @@ p{
     font-size: 20px;
 }
 
+q{
+  margin: 5px 20px;
+  font-size: 20px;
+  color:rgb(189, 132, 140);
+  background-color: rgba(252, 188, 197, 0.219);
+}
+
 img{
     margin: 50px;
 }
@@ -74,10 +81,35 @@ header {
     color: red;
     font-size: 35px;
     line-height: 80px;
-    margin-left: 40px;
+    margin-left: 25px;
     font-weight: 700;
   }
-  
+
+  @media screen and (min-width: 601px) {
+    nav label.logo {
+      -webkit-transition: .5s;
+      transition: .5s;
+      color: red;
+      font-size: 35px;
+      line-height: 80px;
+      margin-left: 25px;
+      font-weight: 700;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    nav label.logo {
+      -webkit-transition: .5s;
+      transition: .5s;
+      color: red;
+      font-size: 8vw;
+      line-height: 80px;
+      margin-left: 25px;
+      font-weight: 700;
+    }
+  }
+
+
   nav ul {
     float: right;
     margin-right: 40px;
