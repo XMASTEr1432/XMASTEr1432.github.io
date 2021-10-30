@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
+
+
+html { scroll-behavior: smooth; }
 *{
     margin: 0;
     padding: 0;
+}
+
+/* fonts and text */
+
+button.darkmode{
+  border-radius: 4px;
+  background-color: #ff0000;
+  color: rgb(247, 247, 247);
+  padding: 5px 12px;
+  border-color: rgb(255, 98, 98);
+  font-family: 'Lato', sans-serif; 
+}
+
+.darkmode{
+  background-color: rgb(9, 8, 19);
+  color: white;
 }
 
 body{
@@ -15,39 +34,135 @@ p{
 }
 
 q{
-  margin: 5px 20px;
   font-size: 20px;
   color:rgb(189, 132, 140);
   background-color: rgba(252, 188, 197, 0.219);
 }
 
-img{
-    margin: 50px;
+li.steps{
+  margin: 5px 80px;
+  font-size:25px;
+  color: rgba(255, 0, 0, 0.747);
+}
+
+blockquote{
+  margin: 5px 20px;
+  font-size: 20px;
+  color:rgb(189, 132, 140);
+  /*border-style: solid;
+  border-width: 0px 0px 0px 5px; /*0px top 0px right 0px bottom 5px left*/
+  border-left: 5px solid red;
+  background-color: #ff74741f;
+}
+
+blockquote::before{
+  content: "‎‏‏‎ ‎";
 }
 
 .alert{
-  font-size:50 px;
+  font-size:50px;
   color: rgba(255, 0, 0, 0.747);
   text-align: center;
 }
-
-iframe{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-video.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
 b{
     margin: 5px 20px;
     font-size: 35px;
     color: rgba(252, 107, 129, 0.747);
 }
+
+b.tbc{
+  margin: 5px 20px;
+  font-size: 35px;
+  color: rgba(255, 70, 97, 0.747);
+}
+
+a.link{
+  color: rgba(255, 0, 0, 0.781);
+}
+
+a.tbc{
+  margin: 5px 20px;
+  font-size: 30px;
+  color: rgba(230, 105, 124, 0.747);
+}
+
+p.note{
+  color: #ff74749a;
+  font-size: 15px;
+}
+
+p.note:before{
+  content: "Note:";
+}
+
+i{
+  font-size: 20px;
+  color: #00000080;
+}
+
+
+/* video and images*/
+
+iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img{
+  margin: 50px;
+}
+
+/* code */
+code:not(.raspberry2){
+  margin: 5px 20px;
+  font-size: 20px;
+  border-left: 5px solid rgb(0, 132, 255);
+  background-color: rgb(0, 0, 0);
+  color:white;
+}
+
+code:not(.raspberry2):before{
+  content: "‎‏‏‎ ‎";
+}
+
+code{
+  margin: 0;
+  font-size: 20px;
+  border-left: 0px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+code.ssh{
+  margin: 5px 20px;
+  font-size: 20px;
+  border-left: 5px solid rgb(0, 17, 255);
+  background-color: rgb(0, 0, 0);
+  color:rgb(240, 240, 240);
+}
+
+code.ssh:before{
+  color:rgb(240, 240, 240);
+  content: "‎‏‏‎$ ‎";
+}
+code.raspberry:before{
+  color: rgb(1, 255, 1);
+  content: "pi@pi:";
+}
+
+code.raspberry2:before{
+  color: rgb(0, 81, 255);
+  content: "~ $";
+}
+
+/* header */
 
 dl a{
     margin: 5px 20px;

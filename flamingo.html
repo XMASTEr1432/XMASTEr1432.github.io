@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+    }
+    </script>
     <header>
         <nav>
             <input type="checkbox" id="check">
@@ -16,18 +22,47 @@
                 <i class="fas fa-bars"></i>
             </label>
             <label class="logo">flamingo.py</label>
+            <!--logo/name of site-->
             <ul>
                 <li><a href="index.html">Main</a></li>
                 <li><a class="active" href="tutorials.html">Tutorials</a></li>
                 <li><a href="socials.html">Socials</a></li>
                 <li><a href="apps.html">Apps</a></li>
                 <li><a href="https://discord.gg/jEBPQH5QmX">Discord server(?)</a></li>
+                <li><button class="darkmode" onclick="myFunction()">DARK MODE (BETA)</button></li>
+                <!--add class="active" to make text highlited-->
             </ul>
         </nav>
     </header>
     <div style="margin-bottom: 100px;"></div>
-    <div class="alert">
-        WORK IN PROGRESS
-    </div>
+    <b>Flamingo.py</b>
+    <p>
+        First I need to explain something.<br>
+        <i> flamingo.py</i> is a text project that I made for a library called <i>Tkinter</i>. <br>
+        It's called <i>flamingo.py</i> because it has a image of a flamingo in it. <br>
+        I made it to learn how to use <i>Tkinter</i> so it's just a simple project. <br><br>
+        Probably you think right now something like this:<br>
+        <br>
+        <q>How to install tkinter?</q> <br>
+        <br>
+        As it states on <a class="link" href="https://docs.python.org/3/library/tkinter.html">tkinter documentation</a>:<br><br>
+    </p>
+        <blockquote>
+            The tkinter package (“Tk interface”) is the standard Python interface to the Tk GUI toolkit.<br>
+        </blockquote>
+        <blockquote>
+            Both Tk and tkinter are available on most Unix platforms, as well as on Windows systems.<br>
+        </blockquote>
+        <p>
+            In other words you should have it installed with python.<br>
+            After getting that out of the way let's just get straight to the code.<br>
+        </p>
+        <code>
+            from tkinter import *
+        </code>
+        <p></p>
+        <div class="alert">
+            WORK IN PROGRESS
+        </div>
     </body>
-</html>>
+</html>

@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+    }
+    </script>
     <header>
         <nav>
             <input type="checkbox" id="check">
@@ -18,12 +24,15 @@
                 <i class="fas fa-bars"></i>
             </label>
             <label class="logo">Apps</label>
+            <!--logo/name of site-->
             <ul>
                 <li><a href="index.html">Main</a></li>
                 <li><a href="tutorials.html">Tutorials</a></li>
                 <li><a href="socials.html">Socials</a></li>
                 <li><a class="active" href="apps.html">Apps</a></li>
                 <li><a href="https://discord.gg/jEBPQH5QmX">Discord server(?)</a></li>
+                <li><button class="darkmode" onclick="myFunction()">DARK MODE (BETA)</button></li>
+                <!--add class="active" to make text highlited-->
             </ul>
         </nav>
     </header>

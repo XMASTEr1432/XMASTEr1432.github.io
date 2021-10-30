@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/c38af10e15.js" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7528464376376720"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasspberry Pi SSH & VNC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+    }
+    </script>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Raspberry Pi SSH & VNC</label>
+            <!--logo/name of site-->
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a class="active" href="tutorials.html">Tutorials</a></li>
+                <li><a href="socials.html">Socials</a></li>
+                <li><a href="apps.html">Apps</a></li>
+                <li><a href="https://discord.gg/jEBPQH5QmX">Discord server(?)</a></li>
+                <li><button class="darkmode" onclick="myFunction()">DARK MODE (BETA)</button></li>
+                <!--add class="active" to make text highlited-->
+            </ul>
+        </nav>
+    </header>
+    <div style="margin-bottom: 100px;"></div>
+    <b>Connect to your Raspberry Pi using SSH and VNC (Windows)</b>
+    <p>Here I'm going to show you how to connect to your Raspberry Pi through SSH on Windows and how to use VNC.</p>
+    <div style="margin-bottom: 100px;"></div>
+    <b class="tbc">Table of Contents.</b><br>
+    <a class="tbc" href="#IP">How to find the device IP.</a> <br>
+    <a class="tbc" href="#SSH">How to connect SSH.</a> <br>
+    <a class="tbc" href="#VNC">How to setup VNC</a> <br>
+    <div style="margin-bottom: 70px;"></div>
+    <div id="IP">
+    <b>IP</b>
+    <p>To start you need to find the IP of your Raspberry Pi.</p>
+    <p>The easiest way to do that is through console.</p>
+    <p>Open it and type:</p>
+    <code class="raspberry">
+        <code class="raspberry2"> hostname -I</code>
+    </code>
+    <p class="note">
+        <br>
+        remember that you need to be connected to the internet.
+    </p>
+    <img src="https://media.discordapp.net/attachments/802617972098203689/904024509298925568/tut.png?width=1103&height=617" alt="ip adress">
+    <p class="note">
+        <br>
+        it should look something like this.
+    </p>
+    </div>
+    <div id="SSH">
+        <b>SSH</b>
+        <p>To connect to Raspberry Pi with SSH you need to follow this simple steps:</p>
+        <ol type="1">
+            <li class="steps">Enable SSH in Raspberry Pi Configuration.</li>
+            <p>To enable SSH go to Raspberry Pi Configuration -></p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904034628325736518/unknown.png" alt="rpc">
+            <p>Interfaces -></p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904035118107230258/unknown.png" alt="interfaces">
+            <p>enable SSH</p>
+            <p>After you are done it should look like this.</p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904035213284360202/unknown.png" alt="enabled">
+            <li class="steps">Connect through Command Prompt.</li>
+            <p>Now open Command Prompt.</p>
+            <p class="note">
+                <br>
+                <i>win + r</i> then type <i>cmd</i>
+            </p>
+            <p>In CMD type:</p>
+            <code class="ssh">ssh pi@(IP adress of the Raspberry Pi)</code>
+            <p>Then type the password.</p>
+            <p>And you're done!</p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904061109139566674/cmd.png" alt="cmd">
+            <p class="note">
+                <br>
+                it should look like this
+            </p>
+        </ol>
+    </div>
+    <div style="margin-bottom: 70px;"></div>
+    <div id="VNC">
+        <b>VNC</b>
+        <p>To connect to Raspberry Pi with VNC you need to follow this simple steps:</p>
+        <ol type="1">
+            <li class="steps">Enable VNC in Raspberry Pi Configuration.</li>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904034628325736518/unknown.png" alt="rpc">
+            <p>Interfaces -></p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904035118107230258/unknown.png" alt="interfaces">
+            <p>enable VNC</p>
+            <p>After you are done it should look like this.</p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904035273095139328/unknown.png" alt="vnc">
+            <li class="steps">Install VNC viewer.</li>
+            <p>Since Raspberry Pi is a server you need to install VNC viewer.</p>
+            <p>To do that click on <a href="https://www.realvnc.com/en/connect/download/viewer/">this</a> and install it from there.</p>
+            <p>After you are done open the application.</p>
+            <p>It should look like this.</p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904063509783007252/unknown.png?width=864&height=617" alt="">
+            <p>In the <i>Enter a VNC Server adress or search</i> type the ip adress of the Raspberry Pi.</p>
+            <p>Next type username (probably <i>pi</i> ) and password.</p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904064330889318401/vnc.png" alt="passwd">
+            <p>And you're done!</p>
+            <p>You should see Raspberry Pi display now!</p>
+            <img src="https://media.discordapp.net/attachments/802617972098203689/904064921522831360/unknown.png?width=1102&height=617" alt="done">
+        </ol>
+    </div>
+    <div style="margin-bottom: 700px;"></div>
+    <a href="gif.html"><img src="https://media.discordapp.net/attachments/884773170370969610/901920660299849828/ezgif.com-gif-maker_1.gif" alt="sausage"></a>
+</body>
+</html>
