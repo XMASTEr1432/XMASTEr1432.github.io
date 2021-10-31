@@ -1,14 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 
-
-html { scroll-behavior: smooth; }
 *{
     margin: 0;
     padding: 0;
 }
 
 /* fonts and text */
+
+body{
+    font-family: 'Lato', sans-serif; 
+}
+/* p */
+p{
+    margin: 5px 20px;
+    font-size: 20px;
+}
+
+p.dotted{
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: dotted;
+}
+
+p.dashed{
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: dashed;
+}
+
+p.solid {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: solid;
+}
+
+p.doubled {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: double;
+}
+
+p.groove {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: groove;
+}
+
+p.ridge {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: ridge;
+}
+
+p.inset {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: inset;
+}
+
+p.outset {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: outset;
+}
+
+p.none {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: none;
+}
+
+p.hidden {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: hidden;
+}
+
+p.mix {
+  margin: 5px 20px;
+  font-size: 20px;
+  border-style: dotted dashed solid double;
+}
+
+p.custom{
+  margin: 5px 20px;
+  font-size: 20px;
+  /*border-style: solid;
+  border-width: 0px 0px 0px 5px; /*0px top 0px right 0px bottom 5px left*/
+  border-left: 5px solid red;
+  background-color: #ff74741f;
+}
+
+/*-----*/
 
 button.darkmode{
   border-radius: 4px;
@@ -19,30 +103,14 @@ button.darkmode{
   font-family: 'Lato', sans-serif; 
 }
 
-.darkmode{
-  background-color: rgb(9, 8, 19);
-  color: white;
-}
-
-body{
-    font-family: 'Lato', sans-serif; 
-}
-
-p{
-    margin: 5px 20px;
-    font-size: 20px;
+a.link{
+  color: rgba(255, 0, 0, 0.781);
 }
 
 q{
   font-size: 20px;
   color:rgb(189, 132, 140);
   background-color: rgba(252, 188, 197, 0.219);
-}
-
-li.steps{
-  margin: 5px 80px;
-  font-size:25px;
-  color: rgba(255, 0, 0, 0.747);
 }
 
 blockquote{
@@ -53,10 +121,6 @@ blockquote{
   border-width: 0px 0px 0px 5px; /*0px top 0px right 0px bottom 5px left*/
   border-left: 5px solid red;
   background-color: #ff74741f;
-}
-
-blockquote::before{
-  content: "‎‏‏‎ ‎";
 }
 
 .alert{
@@ -71,39 +135,35 @@ b{
     color: rgba(252, 107, 129, 0.747);
 }
 
-b.tbc{
+code{
   margin: 5px 20px;
-  font-size: 35px;
-  color: rgba(255, 70, 97, 0.747);
+  font-size: 20px;
+  border-left: 5px solid rgb(0, 132, 255);
+  background-color: rgb(0, 0, 0);
+  color:white;
 }
 
-
-a.link{
-  color: rgba(255, 0, 0, 0.781);
+code:before{
+  content: "‎‏‏‎ ‎";
 }
 
-a.tbc{
+code.ssh{
   margin: 5px 20px;
-  font-size: 30px;
-  color: rgba(230, 105, 124, 0.747);
+  font-size: 20px;
+  border-left: 5px solid rgb(0, 17, 255);
+  background-color: rgb(0, 0, 0);
+  color:rgb(240, 240, 240);
 }
 
-p.note{
-  color: #ff74749a;
-  font-size: 15px;
+code.ssh:before{
+  color:rgb(240, 240, 240);
+  content: "‎‏‏‎$ ‎";
 }
 
-p.note:before{
-  content: "Note:";
-}
 
 i{
   font-size: 20px;
   color: #00000080;
-}
-
-.darkmode i{
-  color: #a37171;
 }
 
 
@@ -125,46 +185,15 @@ img{
   margin: 50px;
 }
 
-/* code */
-code:not(.raspberry2){
-  margin: 5px 20px;
-  font-size: 20px;
-  border-left: 5px solid rgb(0, 132, 255);
-  background-color: rgb(0, 0, 0);
-  color:white;
+/* fonts and text dark theme */
+
+body{
+  font-family: 'Lato', sans-serif; 
 }
 
-code:not(.raspberry2):before{
-  content: "‎‏‏‎ ‎";
-}
-
-code{
-  margin: 0;
-  font-size: 20px;
-  border-left: 0px solid rgb(0, 0, 0);
-  background-color: rgb(0, 0, 0);
-}
-
-code.ssh{
-  margin: 5px 20px;
-  font-size: 20px;
-  border-left: 5px solid rgb(0, 17, 255);
-  background-color: rgb(0, 0, 0);
-  color:rgb(240, 240, 240);
-}
-
-code.ssh:before{
-  color:rgb(240, 240, 240);
-  content: "‎‏‏‎$ ‎";
-}
-code.raspberry:before{
-  color: rgb(1, 255, 1);
-  content: "pi@pi:";
-}
-
-code.raspberry2:before{
-  color: rgb(0, 81, 255);
-  content: "~ $";
+.darkmode{
+  background-color: rgb(9, 8, 19);
+  color: white;
 }
 
 /* header */
@@ -226,23 +255,6 @@ header {
       line-height: 80px;
       margin-left: 25px;
       font-weight: 700;
-    }
-    img{
-      margin: 5px;
-      height: 100%;
-      width: 100%;
-    }
-    code{
-      margin: 1px;
-      font-size: 15px;
-    }
-    code.ssh{
-      margin: 1px;
-      font-size: 15px;
-    }
-    code.raspberry{
-      margin: 1px;
-      font-size: 15px;
     }
   }
 
@@ -321,43 +333,3 @@ header {
       left: 0;
     }
   }
-
-@media (max-width: 375px) {
-  nav .checkbtn {
-    display: block;
-  }
-  nav ul {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: white;
-    color: white;
-    top: 80px;
-    left: 100%;
-    text-align: center;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 25px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  nav ul li a.active, nav ul li a:hover {
-    background: none;
-    color: red;
-  }
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-  b{
-    font-size: 30px;
-  }
-  b.tbc{
-    font-size: 30px;
-  }
-}
-
