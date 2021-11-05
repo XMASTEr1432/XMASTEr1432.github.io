@@ -97,6 +97,10 @@ p.note:before{
   content: "Note:";
 }
 
+p.small{
+  font-size: 15px;
+}
+
 i{
   font-size: 20px;
   color: #00000080;
@@ -127,23 +131,23 @@ img{
 
 /* code */
 code:not(.raspberry2){
-  margin: 5px 20px;
+  /*margin: 5px 20px;
   font-size: 20px;
   border-left: 5px solid rgb(0, 132, 255);
   background-color: rgb(0, 0, 0);
-  color:white;
+  color:white;*/
+  margin: 5px 20px;
+  font-size: 20px;
+  border-left: 0px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 code:not(.raspberry2):before{
   content: "‎‏‏‎ ‎";
 }
 
-code{
-  margin: 0;
-  font-size: 20px;
-  border-left: 0px solid rgb(0, 0, 0);
-  background-color: rgb(0, 0, 0);
-}
+
 
 code.ssh{
   margin: 5px 20px;

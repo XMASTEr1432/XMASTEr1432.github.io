@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flamingo.py</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylepython.css">
 </head>
 <body>
     <script>
@@ -25,6 +25,7 @@
             <!--logo/name of site-->
             <ul>
                 <li><a href="index.html">Main</a></li>
+                <li><a href="games.html">Games</a></li>
                 <li><a class="active" href="tutorials.html">Tutorials</a></li>
                 <li><a href="socials.html">Socials</a></li>
                 <li><a href="apps.html">Apps</a></li>
@@ -57,12 +58,133 @@
             In other words you should have it installed with python.<br>
             After getting that out of the way let's just get straight to the code.<br>
         </p>
-        <code>
+        <code class="python">
             from tkinter import *
         </code>
-        <p></p>
-        <div class="alert">
-            WORK IN PROGRESS
+        <p>You need to import the library first.</p>
+        <code class="python">
+            a = Tk()
+        </code>
+        <br>
+        <code class="python">
+            a.geometry("400x400")
+        </code>
+        <p><i>a.geometry("400x400")</i> is for the window size.</p>
+        <p>If you want you can change <i>a = Tk()</i> to something else</p>
+        <p>For example: <i>i = Tk()</i></p>
+        <code class="python">
+            a.resizable(width= False, height=False)
+        </code>
+        <br>
+        <code class="python">
+            a.configure(bg="pink", cursor "heart")
+        </code>
+        <p><i>a.resizable(width=False, height=False)</i> is for disabling an option for user to risize the window</p>
+        <p><i>a.configure(bg="pink", cursor="heart")</i> changes background to pink (bg="pink",) and changes how the cursor looks</p>
+        <code class="python">
+            img = PhotoImage(file="flamingo.png")
+        </code>
+        <p>Here you need an image file named <i>"flamingo.png"</i>.</p>
+        <p>You can find it <a class="link" href="https://github.com/XMASTEr1432/python-code/blob/main/flamingo%20app/flamingo.png">here</a>.</p>
+        <code class="python">
+            canvas = Canvas(a, width = 400, height = 400,
+        </code>
+        <code class="python">
+            bg = "pink",bd=0, highlightthickness=0) 
+        </code>
+        <blockquote>
+            <a class="link" href="https://www.tutorialspoint.com/python/tk_canvas.htm">The Canvas is a rectangular area intended for drawing pictures or other complex layouts. You can place graphics, text, widgets or frames on a Canvas.</a>
+        </blockquote>
+        <p><i>width = 400</i> changes the width of the image.</p>
+        <p><i>height = 400</i> changes height of the image.</p>
+        <p><i>bg = "pink"</i> makes the background pink.</p>
+        <p><i>bd = 0</i> changes the border size.</p>
+        <code class="python">
+            canvas.pack()
+        </code>
+        <p>Create the canvas.</p>
+        <code class="python">
+            canvas.create_image(20,20,anchor=NW, image=img)
+        </code>
+        <p>Changes the place where the canvas is created.</p>
+        <code class="python">
+            a.title("flamingo")
+        </code>
+        <p>Changes the window title.</p>
+        <code class="python">
+            a.iconphoto(False, img)
+        </code>
+        <p>Change the icon (<i>img</i> is a variable from earlier<i>(img = PhotoImage(file="flamingo.png")</i>))</p>
+        <code class="python">
+            a.mainloop()
+        </code>
+        <p>You need this to keep the window running.</p>
+        <p>Here is the full code:</p>
+        <div>
+        <code class="python">
+            from tkinter import *
+        </code>
+        <br>
+        <code class="python">
+            a = Tk()
+        </code>
+        <br>
+        <code class="python">
+            a.geometry("400x400")
+        </code>
+        <br>
+        <code class="python">
+            a.resizable(width=False, height=False)
+        </code>
+        <br>
+        <code class="python">
+            a.configure(bg="pink", cursor="heart")
+        </code>
+        <br>
+        <code class="python">
+            img = PhotoImage(file="flamingo.png")
+        </code>
+        <br>
+        <code class="python">
+            canvas = Canvas(a, width = 400, height = 400,
+        </code>
+        <br>
+        <code class="python">
+            bg = "pink",bd=0, highlightthickness=0) 
+        </code>
+        <br>
+        <code class="python">
+            canvas.pack()
+        </code>
+        <br>
+        <code class="python">
+            canvas.create_image(20,20,anchor=NW, image=img) 
+        </code>
+        <br>
+        <code class="python">
+            a.title("flamingo")
+        </code>
+        <br>
+        <code class="python">
+            a.iconphoto(False, img)
+        </code>
+        <br>
+        <code class="python">
+            a.mainloop()
+        </code>
+        <br>
         </div>
+        <p>Also you can find it <a href="https://github.com/XMASTEr1432/python-code/tree/main/flamingo%20app">here</a>.</p>
+        <div style="margin-bottom: 100px;"></div>
+        <b>That's it! Good job.</b>
+        <img src="https://camo.githubusercontent.com/582c7123dbf58a15edbd069d92bce1bae8af7d842a2805cae39ebf5147974722/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3530333236333333393631353438353935322f3833343737353736313135313435393430382f636f6e67726174732e706e67" alt="gj">
+        <p>Now you can leave!</p>
+        <p>Press <a class="link" href="index.html">here!</a></p>
+        <div style="margin-bottom: 1200px;"></div>
+        <p>ok you asked for it</p>
+        <img src="https://camo.githubusercontent.com/15a49941af6fd7bc90eae7f4045d3b0659bcadead934fd1c9c7fee437dd136bb/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3435393830353534393937393233383430312f3832393639323035343331333130373436362f32303231303430375f3131323033382e6a70673f77696474683d383132266865696768743d363039" alt="maid">
+        <br>
+        <b>Maid Spongebob</b>
+        <p>ok you can now <a class="link" href="index.html">leave</a></p>
     </body>
 </html>
