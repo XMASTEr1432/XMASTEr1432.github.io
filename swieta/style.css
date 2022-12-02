@@ -64,7 +64,7 @@ p.produkt{
 p.cena{
   margin: 5px 20px;
   font-size: 25px;
-  color:rgb(255, 0, 98);
+  color:rgb(247, 247, 247);
   font-weight: bold;
 }
 p.cena::after{
