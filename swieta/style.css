@@ -54,6 +54,10 @@ div.lista{
   background-color: #ffffff36;
   margin: 10px 30px;
 }
+div.vinyle{
+  background-color: #00ff1536;
+  margin: 10px 30px;
+}
 p.produkt{
   margin: 5px 20px;
   font-size: 25px;
