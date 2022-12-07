@@ -24,7 +24,7 @@ button.darkmode{
   color: white;
 }
 
-body{
+body.swieta{
     font-family: 'Lato', sans-serif; 
     background-color: rgb(9, 8, 19);
     background-image: url("choinki.jpg");
@@ -75,6 +75,16 @@ p.cena::after{
   content: " zł";
 }
 
+p.cenaoryginal{
+  font-size: 25px;
+  color:rgb(139, 139, 139);
+  font-weight: bold;
+  text-decoration: line-through;
+  margin: 5px 20px;
+}
+p.cenaoryginal::after{
+  content: " zł";
+}
 h1{
   color:rgb(0, 0, 0);
   margin: 5px 25px;
