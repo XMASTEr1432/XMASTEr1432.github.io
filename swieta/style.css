@@ -50,6 +50,11 @@ p{
     font-size: 20px;
     color:rgb(13, 239, 66)
 }
+p.podziekowanie{
+    margin: 5px 20px;
+    font-size: 20px;
+    color:rgb(13, 28, 239)
+}
 div.lista{
   background-color: #ffffff36;
   margin: 10px 30px;
