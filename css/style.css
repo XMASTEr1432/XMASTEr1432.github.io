@@ -194,7 +194,7 @@ header {
   }
   
   nav {
-    background: rgba(255, 232, 232, 0.932);
+    background: rgba(171, 126, 255, 0.932);
     height: 80px;
     width: 100%;
   }
@@ -202,7 +202,7 @@ header {
   nav label.logo {
     -webkit-transition: .5s;
     transition: .5s;
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 35px;
     line-height: 80px;
     margin-left: 25px;
@@ -213,7 +213,7 @@ header {
     nav label.logo {
       -webkit-transition: .5s;
       transition: .5s;
-      color: red;
+      color: rgb(255, 255, 255);
       font-size: 35px;
       line-height: 80px;
       margin-left: 25px;
@@ -225,7 +225,7 @@ header {
     nav label.logo {
       -webkit-transition: .5s;
       transition: .5s;
-      color: red;
+      color: rgb(255, 255, 255);
       font-size: 8vw;
       line-height: 80px;
       margin-left: 25px;
@@ -265,7 +265,7 @@ header {
   nav ul li a {
     -webkit-transition: .5s;
     transition: .5s;
-    color: #ff7474;
+    color: #7674ff;
     font-size: 17px;
     font-weight: 800;
     padding: 7px 13px;
@@ -275,7 +275,7 @@ header {
   }
   
   nav ul li a.active, nav ul li a:hover {
-    background: #ff0c04;
+    background: black;
     color: white;
   }
   
