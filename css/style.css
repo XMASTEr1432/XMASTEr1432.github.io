@@ -48,7 +48,7 @@ li.steps{
 blockquote{
   margin: 5px 20px;
   font-size: 20px;
-  color:rgb(189, 132, 140);
+  color:ghostwhite;
   /*border-style: solid;
   border-width: 0px 0px 0px 5px; /*0px top 0px right 0px bottom 5px left*/
   border-left: 5px solid red;
@@ -176,13 +176,13 @@ code.raspberry2:before{
 dl a{
     margin: 5px 20px;
     font-size: 15px;
-    color: rgb(255, 131, 150);
+    color: rgb(171, 126, 255);
     background-color: rgba(255, 160, 122, 0.151);
 }
 dt{
     margin: 5px 20px;
     font-size: 20px;
-    color: rgb(255, 160, 122);
+    color: rgb(171, 126, 255);
     background-color: rgba(252, 188, 197, 0.219);
 }
 
@@ -319,7 +319,7 @@ header {
     }
     nav ul li a.active, nav ul li a:hover {
       background: none;
-      color: red;
+      color: rgb(111, 0, 255);
     }
     nav #check:checked ~ ul {
       left: 0;
@@ -352,7 +352,7 @@ header {
   }
   nav ul li a.active, nav ul li a:hover {
     background: none;
-    color: red;
+    color: rgb(111, 0, 255);
   }
   nav #check:checked ~ ul {
     left: 0;
