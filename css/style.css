@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-
+@import "darkmode.css";
 
 
 html { scroll-behavior: smooth; }
@@ -10,19 +10,9 @@ html { scroll-behavior: smooth; }
 
 /* fonts and text */
 
-button.darkmode{
-  border-radius: 4px;
-  background-color: #333341;
-  color: rgb(247, 247, 247);
-  padding: 5px 12px;
-  border-color: rgb(0, 0, 0);
-  font-family: Consolas, monaco, monospace;
-}
 
-.darkmode{
-  background-color: rgb(9, 8, 19);
-  color: white;
-}
+
+
 
 body{
     font-family: 'Lato', sans-serif; 
@@ -80,6 +70,16 @@ b.tbc{
 
 a.link{
   color: rgba(255, 0, 0, 0.781);
+  display: block;
+  margin: 5px 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a.link:hover
+{
+  color: rgb(190, 2, 2);
+  text-decoration: underline;
 }
 
 a.tbc{
@@ -106,9 +106,7 @@ i{
   color: #00000080;
 }
 
-.darkmode i{
-  color: #a37171;
-}
+
 
 
 /* video and images*/
@@ -251,6 +249,8 @@ header {
   }
 
 
+
+
   nav ul {
     float: right;
     margin-right: 40px;
@@ -265,7 +265,7 @@ header {
   nav ul li a {
     -webkit-transition: .5s;
     transition: .5s;
-    color: #7674ff;
+    color: lavender;
     font-size: 17px;
     font-weight: 800;
     padding: 7px 13px;
@@ -365,3 +365,12 @@ header {
   }
 }
 
+
+figcaption{
+  color: lavender;
+  margin-left: 5px;
+}
+
+figcaption:hover{
+  color: rgb(175, 175, 255);
+}

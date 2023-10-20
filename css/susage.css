@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+    nav
+    {
+        margin-top: -10%;
+        transition: margin-top 2s;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    nav
+    {
+        margin-top: -4.2%;
+        transition: margin-top 2s;
+    }
+}
+
+nav:hover
+{
+    margin-top: 0%;
+}
