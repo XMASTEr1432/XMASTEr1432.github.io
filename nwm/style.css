@@ -1,0 +1,165 @@
+/*  
+* Style by D3NN7
+* and Patrick Hlauke (https://codepen.io/patrickhlauke/pen/YaoBop)
+*/
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/NotoSansDisplay-Regular.ttf);
+  }
+  html { background: #111;
+          padding: 1em;
+          font-family: Noto Sans Display;
+          color: #eee;
+          font-size: 1em;
+          line-height: 1;
+          text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+          letter-spacing: 0.125em;
+          animation-duration: 0.01s;
+          animation-name: textflicker;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+    }
+    h1 { 
+      font-size: 5em; 
+      text-align: center;
+      border: 10px solid #111;
+      background-color: #111;
+    }
+  
+    a {
+      color: white;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      body {
+          margin-left: 20rem;
+          margin-right: 20rem;
+      }
+    }
+  
+    @media screen and (min-width: 600px) {
+        body {
+            margin-left: 5em;
+            margin-right: 5em;
+        }
+    }
+    
+    @keyframes textflicker {
+      from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+      }
+      to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+      }
+    }
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main
+{
+    border: 80px solid white;
+    border-image: url(images/trace.svg) 100 200 stretch;
+    width: 100%;
+    height: 40vw;
+    text-align: center;
+    background-color: rgb(75, 75, 75);
+    background-image: url(images/static-dark.gif);
+}
+
+p
+{
+    font-size: 12pt;
+}
+
+section#dupa
+{
+    margin-top: 15%;
+}
+
+
+a.link
+{
+    background-color: #111;
+    border: 10px solid #111;
+}
+
+a.link:hover
+{
+    border: 8px solid #111;
+    text-decoration: none;
+}
+
+#home
+{
+    margin-left: -90%;
+}
+
+#home > a > img
+{
+    width: 100px;
+    height: 100px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin-left: 5em;
+        margin-right: 5em;
+        color: red;
+    }
+    h1
+    {
+        font-size: 3em;
+    }
+    p
+    {
+        font-size: 10pt;
+    }
+    section#dupa
+    {
+        margin-top: 15%;
+    }
+    a.link
+    {
+        background-color: none;
+        border: none;
+    }
+
+    a.link:hover
+    {
+        border: none;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin-left: 5em;
+        margin-right: 5em;
+        color: green;
+    }
+    h1
+    {
+        font-size: 2em;
+    }
+    p
+    {
+        font-size: 10pt;
+    }
+    #home > a > img
+    {
+        width: 5px;
+        height: 5px;
+    }
+}
+
