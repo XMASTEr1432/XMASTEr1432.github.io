@@ -5,6 +5,11 @@
     width: auto;
 }
 
+#gwiazdka
+{
+    background-color: black;
+}
+
 body
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -51,4 +56,9 @@ input
     color: white;
     font-size: 20pt;
     border: 5px solid white;
+}
+
+span
+{
+    color: red;
 }
