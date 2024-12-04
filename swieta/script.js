@@ -11,7 +11,8 @@ let stronaProduktu = [
     "https://www.empik.com/ns-persona-5-tactica-cenega,p1396771776,multimedia-p?mpShopId=2669&utm_source=google&utm_medium=cpc&utm_campaign=20327908306&utm_id=20327908306&utm_term=empik_multimedia&gclsrc=aw.ds&gad_source=1&gclid=EAIaIQobChMIm5fVluuOigMVZgqiAx1liQu6EAQYAiABEgIOb_D_BwE&cls=1",
     "https://mediamarkt.pl/pl/product/_gra-nintendo-switch-pokemon-violet-1467323.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_na_nsp_na_PMAX-Shopping-Promo-Price-PLA&gad_source=1&gclid=EAIaIQobChMI2Yad4OqOigMVkBmiAx1QsDJNEAQYASABEgLW6vD_BwE",
     "https://www.empik.com/kwiaty-dla-algernona-keyes-daniel,p1223076786,ksiazka-p?utm_source=google&utm_medium=cpc&utm_campaign=20800944404&utm_id=20800944404&utm_term=empik_ksiazka&gclsrc=aw.ds&gad_source=1&gclid=EAIaIQobChMI6-ar1_SOigMVnwuiAx23rhMVEAYYASABEgJ8j_D_BwE&cls=1",
-    "https://www.x-kom.pl/p/1186687-sluchawki-bezprzewodowe-corsair-hs65-wireless-carbon-v2.html"
+    "https://www.x-kom.pl/p/1186687-sluchawki-bezprzewodowe-corsair-hs65-wireless-carbon-v2.html",
+    "https://yatta.pl/Arcane_League_of_legends_Season_1_Blu_Ray_UK,273110,p"
 ]
 
 let obrazyProduktow = [
@@ -23,7 +24,8 @@ let obrazyProduktow = [
     "https://ecsmedia.pl/cdn-cgi/image/format=webp,/c/persona-5-tactica-nintendo-switch-b-iext156222007.jpg",
     "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_117264598?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402",
     "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/kwiaty-dla-algernona-b-iext161052805.jpg",
-    "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/10/pr_2023_10_20_13_7_43_397_00.jpg"
+    "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/10/pr_2023_10_20_13_7_43_397_00.jpg",
+    "https://cache.yatta-static.pl/cache/size300/border429/es11/zoom0/pi0/img=towary/sprowadzane/497682/0.jpg"
 ]
 
 let nazwaProduktu = [
@@ -35,7 +37,8 @@ let nazwaProduktu = [
     "Persona 5 Tactica, Nintendo Switch",
     "Gra Nintendo Switch Pokémon Violet",
     "Kwiaty dla Algernona",
-    "Corsair HS65 Wireless (Carbon) v2"
+    "Corsair HS65 Wireless (Carbon) v2",
+    "Arcane League of legends Season 1 Blu-Ray UK"
 ]
 
 let komentarzDoProduktu = [
@@ -47,7 +50,8 @@ let komentarzDoProduktu = [
     "brak",
     "aktualnie jest obniżka (04.12)",
     "brak",
-    "aktualnie jest obnizka (04.12)"
+    "aktualnie jest obnizka (04.12)",
+    "nie jestem pewny czy ma to sens :)"
 ]
 
 let przecenaProduktu = "<span>*<span>"
@@ -61,7 +65,8 @@ let cenaProduktu = [
     "99,90zł",
     "172,99zł" + przecenaProduktu,
     "27,99zł",
-    "335zł" + przecenaProduktu
+    "335zł" + przecenaProduktu,
+    "279,90zł"
 ]
 
 // modyfikacja tablicy 
@@ -94,11 +99,13 @@ let listaProduktow = new Array()
 
 // dodawanie tablicy
 
+
 for(i = 0; i < nazwaProduktu.length; i++)
 {
     listaProduktow.push("<li><h4>" + cenaProduktu[i] + nazwaProduktu[i] + stronaProduktu[i] + komentarzDoProduktu[i] + "<br><br>" +  obrazyProduktow[i] + "</h4></li>")
     console.log(i)
 }
+
 
 document.getElementById("lista").innerHTML = listaProduktow
 
