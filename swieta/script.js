@@ -2,6 +2,16 @@ console.log("ok")
 
 // tablice
 
+let stronaProduktu = [
+    "https://tacohemingway.store/marmur",
+    "https://www.empik.com/graduation-kanye-west,p1225977276,muzyka-p",
+    "https://www.amazon.pl/dp/1835411711/?coliid=IMYTGS44HOD6W&colid=WUXHXXMYEKG4&psc=0&ref_=list_c_wl_lv_ov_lig_dp_it_im",
+    "https://www.mediaexpert.pl/gaming/gry/gry/gra-nintendo-switch-super-mario-rpg?gad_source=1",
+    "https://www.empik.com/the-legend-of-zelda-echoes-of-wisdom-nintendo,p1501938254,multimedia-p?utm_source=google&utm_medium=cpc&utm_campaign=21912298706&utm_id=21912298706&utm_term=empik_multimedia&gad_source=1&gclid=EAIaIQobChMIwda_t-uOigMVd0-RBR1KbgtiEAQYASABEgJRMPD_BwE&gclsrc=aw.ds",
+    "https://www.empik.com/ns-persona-5-tactica-cenega,p1396771776,multimedia-p?mpShopId=2669&utm_source=google&utm_medium=cpc&utm_campaign=20327908306&utm_id=20327908306&utm_term=empik_multimedia&gclsrc=aw.ds&gad_source=1&gclid=EAIaIQobChMIm5fVluuOigMVZgqiAx1liQu6EAQYAiABEgIOb_D_BwE&cls=1",
+    "https://mediamarkt.pl/pl/product/_gra-nintendo-switch-pokemon-violet-1467323.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_na_nsp_na_PMAX-Shopping-Promo-Price-PLA&gad_source=1&gclid=EAIaIQobChMI2Yad4OqOigMVkBmiAx1QsDJNEAQYASABEgLW6vD_BwE"
+]
+
 let obrazyProduktow = [
     "https://tacohemingway.store/img/imagecache/6001-7000/680x680/1/product-media/6001-7000/Marmur-8097-680x680.jpg",
     "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/graduation-b-iext145478233.jpg",
@@ -14,23 +24,13 @@ let obrazyProduktow = [
 
 for(let i = 0; i<obrazyProduktow.length; i++)
 {
-    obrazyProduktow[i] = "<img class='obrazyProduktu' src='" + obrazyProduktow[i] + "' alt='obraz'>"
+    obrazyProduktow[i] = "<a href='" + stronaProduktu[i] + "'><img class='obrazyProduktu' src='" + obrazyProduktow[i] + "' alt='obraz'></a>"
 }
-
-let stronaProduktu = [
-    "https://tacohemingway.store/marmur",
-    "https://www.empik.com/graduation-kanye-west,p1225977276,muzyka-p",
-    "https://www.amazon.pl/dp/1835411711/?coliid=IMYTGS44HOD6W&colid=WUXHXXMYEKG4&psc=0&ref_=list_c_wl_lv_ov_lig_dp_it_im",
-    "https://www.mediaexpert.pl/gaming/gry/gry/gra-nintendo-switch-super-mario-rpg?gad_source=1",
-    "https://www.empik.com/the-legend-of-zelda-echoes-of-wisdom-nintendo,p1501938254,multimedia-p?utm_source=google&utm_medium=cpc&utm_campaign=21912298706&utm_id=21912298706&utm_term=empik_multimedia&gad_source=1&gclid=EAIaIQobChMIwda_t-uOigMVd0-RBR1KbgtiEAQYASABEgJRMPD_BwE&gclsrc=aw.ds",
-    "https://www.empik.com/ns-persona-5-tactica-cenega,p1396771776,multimedia-p?mpShopId=2669&utm_source=google&utm_medium=cpc&utm_campaign=20327908306&utm_id=20327908306&utm_term=empik_multimedia&gclsrc=aw.ds&gad_source=1&gclid=EAIaIQobChMIm5fVluuOigMVZgqiAx1liQu6EAQYAiABEgIOb_D_BwE&cls=1",
-    "https://mediamarkt.pl/pl/product/_gra-nintendo-switch-pokemon-violet-1467323.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_na_nsp_na_PMAX-Shopping-Promo-Price-PLA&gad_source=1&gclid=EAIaIQobChMI2Yad4OqOigMVkBmiAx1QsDJNEAQYASABEgLW6vD_BwE"
-]
 for(let i = 0; i<stronaProduktu.length; i++)
     {
         stronaProduktu[i] = "<a class='stronaProduktu' href='" + stronaProduktu[i] + "'>Strona produktu</a>"
     }
-
+    
 let komentarzDoProduktu = [
     "płyta jest w przedsprzedaży do 17 grudnia",
     "jakakolwiek płyta Kanye West będzie ok ta tylko jest przykładem",
@@ -82,8 +82,26 @@ let listaProduktow = new Array()
 
 for(i = 0; i < nazwaProduktu.length; i++)
 {
-    listaProduktow += "<li><h4>" + cenaProduktu[i] + nazwaProduktu[i] + stronaProduktu[i] + komentarzDoProduktu[i] + "<br>" +  obrazyProduktow[i] + "</h4></li>"
+    listaProduktow.push("<li><h4>" + cenaProduktu[i] + nazwaProduktu[i] + stronaProduktu[i] + komentarzDoProduktu[i] + "<br>" +  obrazyProduktow[i] + "</h4></li>")
     console.log(i)
 }
 
 document.getElementById("lista").innerHTML = listaProduktow
+
+// sortowanie tablicy
+let czySortowane = false;
+
+let sortowanie = () =>
+{
+    document.getElementById("lista").innerHTML = listaProduktow.reverse()
+    if(czySortowane == true)
+    {
+        document.getElementById("przyciskSortowania").value = "Sortuj od najnowszych"
+        czySortowane = false
+    }
+    else
+    {
+        document.getElementById("przyciskSortowania").value = "Sortuj od najstarszych"
+        czySortowane = true
+    }
+}
