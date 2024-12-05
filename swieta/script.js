@@ -73,26 +73,30 @@ let cenaProduktu = [
 
 for(let i = 0; i<obrazyProduktow.length; i++)
 {
-    obrazyProduktow[i] = `<a href='${stronaProduktu[i]}'><img class='obrazyProduktu' src='${obrazyProduktow[i]}' alt='obraz'></a>`
+    // obrazyProduktow[i] = `<a href='${stronaProduktu[i]}'><img class='obrazyProduktu' src='${obrazyProduktow[i]}' alt='obraz'></a>`
+    obrazyProduktow[i] = "<a href='"+stronaProduktu[i}+"'><img class='obrazyProduktu' src='"+obrazyProduktow[i+"' alt='obraz'></a>"
 }
 for(let i = 0; i<stronaProduktu.length; i++)
 {
-    stronaProduktu[i] = `<a class='stronaProduktu' href='${stronaProduktu[i]}'>Strona produktu</a>`
+    // stronaProduktu[i] = `<a class='stronaProduktu' href='${stronaProduktu[i]}'>Strona produktu</a>`
+    stronaProduktu[i] = "<a class='stronaProduktu' href='"+stronaProduktu[i]+"'>Strona produktu</a>"
 }
 
 for(let i = 0; i<komentarzDoProduktu.length; i++)
 {
-    komentarzDoProduktu[i] = `<i class='komentarz'>komentarz: ${komentarzDoProduktu[i]}</i>`
+    // komentarzDoProduktu[i] = `<i class='komentarz'>komentarz: ${komentarzDoProduktu[i]}</i>`
+    komentarzDoProduktu[i] = "<i class='komentarz'>komentarz: "+komentarzDoProduktu[i]+"</i>"
 }
 
 for(let i = 0; i<cenaProduktu.length; i++)
 {
-    cenaProduktu[i] = `<b class='cenaProduktu'>cena: ${cenaProduktu[i]}</b>`
+    // cenaProduktu[i] = `<b class='cenaProduktu'>cena: ${cenaProduktu[i]}</b>`
+    cenaProduktu[i] = "<b class='cenaProduktu'>cena: "+cenaProduktu[i]+"</b>"
 }
 
 for(let i = 0; i<nazwaProduktu.length; i++)
 {
-    nazwaProduktu[i] = `<b class='nazwaProduktu'>produkt: ${nazwaProduktu[i]}</b>`
+    nazwaProduktu[i] = "<b class='nazwaProduktu'>produkt:"+ nazwaProduktu[i]+"</b>"
 }
 
 let listaProduktow = new Array()
