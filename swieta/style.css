@@ -19,7 +19,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: screen;
-    float: left;
+    /* float: left; */
     text-align: center;
 }   
 
