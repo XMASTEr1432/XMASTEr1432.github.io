@@ -74,7 +74,7 @@ let cenaProduktu = [
 for(let i = 0; i<obrazyProduktow.length; i++)
 {
     // obrazyProduktow[i] = `<a href='${stronaProduktu[i]}'><img class='obrazyProduktu' src='${obrazyProduktow[i]}' alt='obraz'></a>`
-    obrazyProduktow[i] = "<a href='"+stronaProduktu[i}+"'><img class='obrazyProduktu' src='"+obrazyProduktow[i+"' alt='obraz'></a>"
+    obrazyProduktow[i] = "<a href='"+stronaProduktu[i]+"'><img class='obrazyProduktu' src='"+obrazyProduktow[i]+"' alt='obraz'></a>"
 }
 for(let i = 0; i<stronaProduktu.length; i++)
 {
