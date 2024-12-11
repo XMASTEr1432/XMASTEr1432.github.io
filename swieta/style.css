@@ -69,3 +69,8 @@ span
 {
     color: red;
 }
+
+.powerbank
+{
+    border: 5px solid gray;
+}
