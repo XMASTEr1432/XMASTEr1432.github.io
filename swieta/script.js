@@ -37,7 +37,7 @@ const listaProduktow = [
         obrazyProduktow: "https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/56/5669256/Super-Mario-RPG-Gra-NINTENDO-SWITCH-2D-1.jpg",
         stronaProduktu: "https://www.mediaexpert.pl/gaming/gry/gry/gra-nintendo-switch-super-mario-rpg?gad_source=1",
         komentarzDoProduktu: "nie wiem czy jest akurat na media expert",
-        grupaProduktu: "brak"
+        grupaProduktu: "gra"
     },
     {
         nazwaProduktu: "The Legend of Zelda: Echoes of Wisdom",
@@ -46,7 +46,7 @@ const listaProduktow = [
         obrazyProduktow: "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/the-legend-of-zelda-echoes-of-wisdom-b-iext170707254.jpg",
         stronaProduktu: "https://www.empik.com/the-legend-of-zelda-echoes-of-wisdom-nintendo,p1501938254,multimedia-p?utm_source=google&utm_medium=cpc&utm_campaign=21912298706&utm_id=21912298706&utm_term=empik_multimedia&gad_source=1&gclid=EAIaIQobChMIwda_t-uOigMVd0-RBR1KbgtiEAQYASABEgJRMPD_BwE&gclsrc=aw.ds",
         komentarzDoProduktu: "brak",
-        grupaProduktu: "brak"
+        grupaProduktu: "gra"
     },  
     {
         nazwaProduktu: "Persona 5 Tactica, Nintendo Switch",
@@ -55,7 +55,7 @@ const listaProduktow = [
         obrazyProduktow: "https://ecsmedia.pl/cdn-cgi/image/format=webp,/c/persona-5-tactica-nintendo-switch-b-iext156222007.jpg",
         stronaProduktu: "https://www.empik.com/ns-persona-5-tactica-cenega,p1396771776,multimedia-p?mpShopId=2669&utm_source=google&utm_medium=cpc&utm_campaign=20327908306&utm_id=20327908306&utm_term=empik_multimedia&gclsrc=aw.ds&gad_source=1&gclid=EAIaIQobChMIm5fVluuOigMVZgqiAx1liQu6EAQYAiABEgIOb_D_BwE&cls=1",
         komentarzDoProduktu: "brak",
-        grupaProduktu: "brak"
+        grupaProduktu: "gra"
     },
     {
         nazwaProduktu: "Gra Nintendo Switch Pokémon Violet",
@@ -64,7 +64,7 @@ const listaProduktow = [
         obrazyProduktow: "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_117264598?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402",
         stronaProduktu: "https://mediamarkt.pl/pl/product/_gra-nintendo-switch-pokemon-violet-1467323.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_na_nsp_na_PMAX-Shopping-Promo-Price-PLA&gad_source=1&gclid=EAIaIQobChMI2Yad4OqOigMVkBmiAx1QsDJNEAQYASABEgLW6vD_BwE",
         komentarzDoProduktu: "aktualnie jest obniżka (04.12)",
-        grupaProduktu: "brak"
+        grupaProduktu: "gra"
     },
     {
         nazwaProduktu: "Kwiaty dla Algernona",
@@ -99,11 +99,50 @@ const listaProduktow = [
         czyPromocja: false,
         obrazyProduktow: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/12/pr_2022_12_5_9_20_54_79_02.jpg",
         stronaProduktu: "https://www.x-kom.pl/p/1094224-powerbank-baseus-powerbank-30000mah-15w.html",
-        komentarzDoProduktu: "brak",
+        komentarzDoProduktu: "Myślałem o jakimś powerbanku, więc daje przykładowe :)",
         grupaProduktu: "powerbank"
+    },
+    {
+        nazwaProduktu: "JoyRoom Powerbank 10000mAh 20W MagSafe + kabel USB-C 0.25m biały",
+        cenaProduktu: 139,
+        czyPromocja: false,
+        obrazyProduktow: "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/6/pr_2024_6_6_14_13_20_885_00.jpg",
+        stronaProduktu: "https://www.x-kom.pl/p/1257691-powerbank-joyroom-powerbank-10000mah-20w-magsafe-kabel-usb-c-025m-bialy.html",
+        komentarzDoProduktu: "Myślałem o jakimś powerbanku, więc daje przykładowe :)",
+        grupaProduktu: "powerbank"
+    },
+    {
+        nazwaProduktu: "Power bank XIAOMI Redmi, 20000 mAh, czarny",
+        cenaProduktu: 95,
+        czyPromocja: false,
+        obrazyProduktow: "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/power-bank-xiaomi-redmi-20000-mah-czarny-b-iext164194792.jpg",
+        stronaProduktu: "https://www.empik.com/xiaomi-redmi-powerbank-20000mah-18w-quick-charge-czarny-xiaomi,p1246819126,elektronika-p",
+        komentarzDoProduktu: "Myślałem o jakimś powerbanku, więc daje przykładowe :)",
+        grupaProduktu: "powerbank"
+    },
+    {
+        nazwaProduktu: "LEGO Animal Crossing Koncert K.K. na placu 77052",
+        cenaProduktu: 235,
+        czyPromocja: true,
+        obrazyProduktow: "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/lego-animal-crossing-koncert-k-k-na-placu-77052-b-iext172499552.jpg",
+        stronaProduktu: "https://www.empik.com/l-50077052-lego,p1481928508,zabawki-p?utm_source=google&utm_medium=cpc&utm_campaign=21545954291&utm_id=21545954291&utm_term=empik_zabawki&gclsrc=aw.ds&gad_source=1&gclid=CjwKCAiAjeW6BhBAEiwAdKltMvEXlCoFRKrhJiAR0GHHjTKGR-wYqIoY3ZKyIRDHxZis0dy2p4m66xoCsz8QAvD_BwE",
+        komentarzDoProduktu: "aktualnie jest obniżka (11.12)",
+        grupaProduktu: "brak"
+    },
+    {
+        nazwaProduktu: "LEGO Animal Crossing, klocki, Odwiedziny Isabelle, 77049",
+        cenaProduktu: 106,
+        czyPromocja: true,
+        obrazyProduktow: "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/lego-animal-crossing-klocki-odwiedziny-isabelle-77049-b-iext169169250.jpg",
+        stronaProduktu: "https://www.empik.com/gaming-ip-gumdrop-4-2024-lego,p1431212572,zabawki-p?utm_source=google&utm_medium=cpc&utm_campaign=20068540982&utm_id=20068540982&utm_term=empik_zabawki&gclsrc=aw.ds&gad_source=1&gclid=CjwKCAiAjeW6BhBAEiwAdKltMk4c68UbCAcfk1Pe-v3wtB5Ep6p9vTWnUiOhi2Gn_2me_dxs1RXxRhoCGogQAvD_BwE",
+        komentarzDoProduktu: "aktualnie jest obniżka (11.12)",
+        grupaProduktu: "brak"
     }
 ]
 
+// sortowanie zmienne
+let czySortowaneData = false
+let czySortowaneCena = false
 // wypisywanie do tablicy
 
 let listaProduktowOutput = document.getElementById("lista")
@@ -131,6 +170,13 @@ let wypisanieTablicy = (produkt) =>
             console.log("brak")
             break;
         }
+        case "gra":
+        {
+            listaProduktowOutputTable = `
+            <li class="gry">
+            `
+            break;
+        }
         default:
         {
             console.log("dupsko")
@@ -156,8 +202,7 @@ let wypisanieTablicy = (produkt) =>
 
 // sortowanie
 
-let czySortowaneData = false
-let czySortowaneCena = false
+
 
 let buttonFirst = document.getElementById("przyciskSortowaniaData")
 

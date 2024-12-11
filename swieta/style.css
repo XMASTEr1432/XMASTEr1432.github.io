@@ -72,5 +72,9 @@ span
 
 .powerbank
 {
-    border: 5px solid gray;
+    border: 5px solid blue;
+}
+.gry
+{
+    border-color: orange;
 }
