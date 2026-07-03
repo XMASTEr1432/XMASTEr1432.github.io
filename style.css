@@ -1,3 +1,194 @@
-@import url("css/style.css");
-@import url("css/stylepython.css");
-@import url("css/progressbar.css");
+/* Core Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
+@font-face {
+  font-family: pixel; /* set name */
+  src: url(font/VCR_OSD_MONO_1.001.ttf); /* url of the font */
+}
+
+
+body {
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Center Wrapper */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Image Wrapper */
+.cover-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Download Button */
+.order-btn {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a1a1a;
+    color: #cc693b; 
+    text-decoration: none;
+    font-family: 'pixel';
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 5px 35px;
+    line-height: 1.1;
+    width: 55%;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s;
+}
+
+@media (max-width: 1000px){
+    .order-btn
+    {
+        font-size: 0.5rem;
+    }
+}
+
+.order-btn:hover {
+    background-color: #000000;
+    transform: translateX(-50%) scale(1.5);
+}
+
+
+/* Streaming Icons Row Container */
+.streaming-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; /* Spaces out the icons horizontally */
+    margin-top: 5px;
+}
+
+/* Common Base Style for Icons */
+.icon-link svg {
+    width: 38px;
+    height: 38px;
+    color: #4a4a4a; /* Matches the original grey muted state */
+    transition: color 0.2s, transform 0.2s;
+}
+
+.icon-link:hover svg {
+    transform: scale(1.08);
+}
+
+/* Brand Specific Hover Effects */
+.soundcloud-link:hover svg {
+    color: #ff5500; /* SoundCloud Orange */
+}
+
+.youtube-link:hover svg {
+    color: #ff0000; /* YouTube Red */
+}
+
+/* Brand Specific Hover Effects */
+.bandcamp-link:hover svg {
+    color: #629aa9; /* Bandcamp Teal */
+}
+
+
+.cover-wrapper
+{
+    overflow: hidden;
+}
+
+
+.cover-wrapper img{
+    transition:transform .5s ease, filter .5s ease;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background-image:
+    repeating-linear-gradient(
+    to bottom,
+    rgba(116, 116, 116, 0.5) 0px,
+    rgba(70, 70, 70, 0.5) 2px, transparent 6px);
+    opacity:0;
+    transform:translateY(-100%);
+}
+
+
+.cover-wrapper:hover .overlay{
+    opacity:.8;
+    animation:anim 3s linear infinite;
+}
+
+    @keyframes anim{
+        0%{
+            transform:translateY(-100%);
+        }
+        100%{
+            transform:translateY(100%);
+        }
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+.tooltiptext:first-of-type
+{
+    width: 225px;
+    margin-left: -120px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 130px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 65%;
+    margin-left: -65px;
+    font-family: pixel;
+    }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media (max-width: 1000px){
+    .tooltip:first-of-type .tooltiptext:first-of-type
+    {
+        visibility: visible;
+        width: 200px;
+        margin-left: -105px;
+    }
+}
