@@ -13,6 +13,12 @@
   src: url(font/VCR_OSD_MONO_1.001.ttf); /* url of the font */
 }
 
+h3
+{
+    color: white;
+    font-family: pixel;
+}
+
 
 body {
     background-color: #070707;
