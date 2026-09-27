@@ -24,7 +24,6 @@ h2
     font-family: 'pixel';
 }
 
-
 body {
     background-color: #070707;
     display: flex;
@@ -206,5 +205,36 @@ body {
         visibility: visible;
         width: 200px;
         margin-left: -105px;
+    }
+}
+
+/* Back Link Styling */
+.back-btn {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-family: 'pixel', monospace;
+    font-size: 0.9rem;
+    color: #4a4a4a;
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.back-btn:hover {
+    color: #cc693b;
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .back-btn {
+        top: 15px;
+        left: 15px;
+        font-size: 0.75rem;
+        padding: 4px 8px;
     }
 }
