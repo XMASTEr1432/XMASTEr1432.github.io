@@ -47,5 +47,38 @@
             </div>
         </div>
     </div>
+
+        <!-- Album Drawer Toggle Arrow & Panel -->
+    <div class="albums-drawer" id="albumsDrawer">
+        <button class="drawer-toggle-btn" id="drawerToggle" aria-label="Toggle Albums Panel">
+            <span class="arrow-icon">▲</span>
+        </button>
+        <div class="drawer-content">
+            <h3>More Projects</h3>
+            <div class="album-grid">
+                <a href="index.html" class="album-item">
+                    <img src="images/stigma.png" alt="stigma">
+                    <span>stigma</span>
+                </a>
+                <a href="album1.html" class="album-item">
+                    <img src="images/album_cover.png" alt="ALL'S WELL THAT ENDS WELL">
+                    <span>ALL'S WELL THAT ENDS WELL</span>
+                </a>
+                <a href="single1.html" class="album-item">
+                    <img src="images/palmy.png" alt="summer throwaway">
+                    <span>summer throwaway</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const drawer = document.getElementById('albumsDrawer');
+        const toggleBtn = document.getElementById('drawerToggle');
+        
+        toggleBtn.addEventListener('click', () => {
+            drawer.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

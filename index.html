@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="album1.html" class="back-btn">LAST PROJECT &gt;</a>
+    <a href="single1.html" class="back-btn">LAST PROJECT &lt;</a>
     <h1 style="display: none;">yuan ahmed</h1>
     <div class="landing-container">
         
         <div class="cover-wrapper">
-            <img src="images/palmy.png" alt="summer throwaway" class="album-cover">
+            <img src="images/stigma.png" alt="stigma" class="album-cover">
             <div class="overlay"></div>
         </div>
         
@@ -21,7 +21,7 @@
         <div class="streaming-icons">
 
             <div class="tooltip">
-                <a href="https://soundcloud.com/xmaster1432/summer-throwaway" target="_blank" class="icon-link soundcloud-link" aria-label="SoundCloud">
+                <a href="https://soundcloud.com/xmaster1432/stigma" target="_blank" class="icon-link soundcloud-link" aria-label="SoundCloud">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M11.56 17.15h8.92c1.94 0 3.52-1.58 3.52-3.53 0-1.85-1.43-3.37-3.25-3.51-.1-.98-.93-1.75-1.94-1.75-.43 0-.82.14-1.15.38-.49-1.46-1.88-2.52-3.52-2.52-1.41 0-2.64.78-3.28 1.94-.4-.14-.83-.22-1.28-.22-1.63 0-3 1.05-3.5 2.51V17.15zm-1.43 0h.71V11.23c-.15.22-.29.46-.41.72-.11.24-.21.51-.3.79V17.15zm-1.43 0h.72v-4.14c-.09-.27-.2-.53-.32-.77l-.4.77V17.15zm-1.42 0h.71v-3.79l-.45.39-.26.39V17.15zm-1.43 0h.72V14.5l-.72.5v2.15zm-1.43 0h.71v-1.61l-.71.55v1.06zm-1.43 0h.72v-.89l-.72.69v.2zm-1.43-.16c.09.06.2.11.31.16H3v-.16z"/>
                     </svg>
@@ -30,5 +30,38 @@
             </div>
         </div>
     </div>
+
+    <!-- Album Drawer Toggle Arrow & Panel -->
+    <div class="albums-drawer" id="albumsDrawer">
+        <button class="drawer-toggle-btn" id="drawerToggle" aria-label="Toggle Albums Panel">
+            <span class="arrow-icon">▲</span>
+        </button>
+        <div class="drawer-content">
+            <h3>More Projects</h3>
+            <div class="album-grid">
+                <a href="index.html" class="album-item">
+                    <img src="images/stigma.png" alt="stigma">
+                    <span>stigma</span>
+                </a>
+                <a href="album1.html" class="album-item">
+                    <img src="images/album_cover.png" alt="ALL'S WELL THAT ENDS WELL">
+                    <span>ALL'S WELL THAT ENDS WELL</span>
+                </a>
+                <a href="single1.html" class="album-item">
+                    <img src="images/palmy.png" alt="summer throwaway">
+                    <span>summer throwaway</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const drawer = document.getElementById('albumsDrawer');
+        const toggleBtn = document.getElementById('drawerToggle');
+        
+        toggleBtn.addEventListener('click', () => {
+            drawer.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
