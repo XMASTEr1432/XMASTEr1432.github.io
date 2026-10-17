@@ -422,3 +422,12 @@ body {
 {
     font-weight: 900;
 }
+/* --- Home Page Social Icon Adjustments --- */
+.home-social {
+    margin-top: 1px;
+    margin-bottom: 25px;
+}
+
+.twitter-link:hover svg {
+    color: #ffffff; /* Twitter/X white hover or pick a custom accent color */
+}
