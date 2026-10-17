@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums Drawer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        /* Drawer container inside iframe */
+        .albums-drawer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #0d0d0d;
+            border-top: 2px solid #222;
+            transform: translateY(calc(100% - 40px));
+            transition: transform 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        .albums-drawer.open {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="albums-drawer" id="albumsDrawer">
+        <button class="drawer-toggle-btn" id="drawerToggle" aria-label="Toggle Albums Panel">
+            <span class="arrow-icon">▲</span>
+        </button>
+        <div class="drawer-content">
+            <h3>More Projects</h3>
+            <div class="album-grid">
+                <!-- Target top frame so clicking a link loads the project in the main window -->
+                <a href="single2.html" target="_top" class="album-item">
+                    <img src="images/stigma.png" alt="stigma">
+                    <span>stigma</span>
+                </a>
+                <a href="single1.html" target="_top" class="album-item">
+                    <img src="images/palmy.png" alt="summer throwaway">
+                    <span>summer throwaway</span>
+                </a>
+                <a href="album1.html" target="_top" class="album-item">
+                    <img src="images/album_cover.png" alt="ALL'S WELL THAT ENDS WELL">
+                    <span class="highlight-album">ALL'S WELL THAT ENDS WELL</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const drawer = document.getElementById('albumsDrawer');
+        const toggleBtn = document.getElementById('drawerToggle');
+        
+        toggleBtn.addEventListener('click', () => {
+            drawer.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
