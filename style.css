@@ -431,3 +431,42 @@ body {
 .twitter-link:hover svg {
     color: #ffffff; /* Twitter/X white hover or pick a custom accent color */
 }
+
+/* --- "NEW" Badge --- */
+.new-badge {
+    display: inline-block;
+    background-color: #cc693b;
+    color: #070707;
+    font-family: 'pixel', monospace;
+    font-size: 0.6rem;
+    font-weight: normal;
+    padding: 1px 4px;
+    margin-left: 4px;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+/* --- Album Border & Label --- */
+.home-album-grid .album-item.album-card {
+    position: relative;
+    width: 148px; /* 130px image + 8px padding & 1px border on each side */
+    padding: 8px;
+    border: 1px solid #cc693b;
+    background-color: #0d0d0d;
+    align-self: flex-start;
+}
+
+.home-album-grid .album-item.album-card::before {
+    content: "ALBUM";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #070707;
+    color: #cc693b;
+    font-family: 'pixel', monospace;
+    font-size: 0.6rem;
+    padding: 0 6px;
+    letter-spacing: 1px;
+}
